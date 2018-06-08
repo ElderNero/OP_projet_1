@@ -1,0 +1,1857 @@
+/* *** A FAIRE *** */
+/*
+- agrandir le border-top du menu au moment du hover
+- mettre la petite flèche lors du survol du selector dans PROJET
+- mettre le filtre bleu sur la map dans CONTACT
+*/
+
+@media screen and (min-width: 1024px)
+{
+    body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+    
+/* *** HEADER *** */
+    header
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        border-bottom: 1px solid black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 3;
+    }
+
+    #headerFlexBox
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #navBar ul
+    {
+        display: flex;
+    }
+
+    #navBar li
+    {
+        list-style-type: none;
+        font-size: 1.2em;
+        padding-right: 40px;
+    }
+
+    #navBar a
+    {
+        text-decoration: none;
+        color: black;
+        padding-top: 32px;
+    }
+
+    #navBar a:hover
+    {
+        border-top: 3px solid rgb(46, 163, 190);
+    }
+    
+    #slideshowTextLowResolution
+    {
+        display: none;
+    }
+
+    /* *** SLIDESHOW *** */
+    #computerSlideshow
+    {
+        position: absolute;
+        top: 95px;
+    }
+
+    #photo1
+    {
+        width: 100%;
+        z-index: 1;
+    }
+
+    .imageSelectorFlexbox
+    {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .leftLang
+    {
+        color: white;
+        position: absolute;
+        top: 40%;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 25px;
+        height: 50px;
+        border-radius: 0 200px 200px 0;
+        font-size: 1.9em;
+        text-align: center;
+        padding-right: 10px;
+    }
+
+    .rightLang
+    {
+        color: white;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 25px;
+        height: 50px;
+        border-radius: 200px 0 0 200px;
+        font-size: 1.9em;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    #slideshowText
+    {
+        font-size: 130%;
+        margin-left: 10%;
+        width: 40%;
+        z-index: 2;
+        position: absolute;
+        top: 20%;
+    }
+
+    #slideshowText h2, #slideshowText p
+    {
+        color: white;
+    }
+
+    #slideshowText span
+    {
+        color: rgb(46, 163, 190);
+    }
+
+    #slideshowText a
+    {
+        text-decoration: none;
+    }
+
+    #slideshowText #button
+    {
+        width: 110px;
+        font-size: 100%;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: rgb(46, 163, 190);
+    }
+
+    #photo2
+    {
+        display: none;
+    }
+    
+    #slideshowLowResolution
+    {
+        display: none;
+    }
+    
+    /* *** SERVICES *** */
+    #nosServices h1
+    {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 47%;
+        margin-bottom: 20px;
+    }
+
+    /* Point bleu et son trait*/
+
+    /*Pour réaliser le point bleu avec ses deux traits, j'ai superposer trois couches. Le premieres étant un trait noir, tout simplement. La seconde etant un point de la couleur du fond pour faire la coupure entre le trait et le point bleu. Puis enfin, le point bleu qui vient de mettre sur les deux autres couches*/
+
+    /* Le point bleu */
+    .theBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin: auto;
+        margin-top: -25px;
+    }
+
+    /* Le point blanc */
+    .theWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* Le point gris */
+    .theGreyPoint
+    {
+        background: rgb(245, 245, 245);
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* le trait autour du point */
+    .pointLine
+    {
+        border-top: 2px solid black;
+        width: 200px;
+        margin: auto;
+    }
+
+    .textIntro
+    {
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    #nosServicesFlexBox
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nosServicesFlexBoxText
+    {
+
+        width: 40%;
+    }
+
+    .nosServicesFlexBoxImage
+    {
+
+        width: 30%;
+    }
+
+    .nosServicesFlexBoxImage img
+    {
+        margin-top: 80px; /* alignement vertical de la photo */
+        width: 150%;
+    }
+
+    .iconPresentation
+    {
+        display: flex;
+    }
+
+    .iconPresentation i
+    {
+        color: deepskyblue;
+        padding-top: 25px;
+        padding-left: 25px;
+        font-size: 300%;
+    }
+
+    /* contour des icones */
+    .round
+    {
+        background: white;
+        border-radius:50%;
+        width: 100px;
+        height:100px;
+        margin-top: 8%;
+        border: 1px solid grey;
+    }
+
+    /* les point blanc */
+    .iconWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin-left: 83px;
+        margin-top: -38px;
+    }
+
+    /*point blue de l'icone */
+    .iconBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin-left: 89px;
+        margin-top: -25px;
+    }
+
+    .iconText
+    {
+        width: 80%;
+        margin-left: 40px; /* distance entre l'icone et le texte */
+        margin-top: 30px;
+    }
+    
+    /* *** PROJETS *** */
+    #nosProjets
+    {
+        background-color: rgb(245, 245, 245);
+        padding-bottom: 50px;
+    }
+
+    #nosProjets h1
+    {
+        text-align: center;
+        font-size: 3em;
+        padding-top: 50px;
+    }
+
+    /* Les réglages du points bleu sont situées plus haut dans la rubriques "Nos Services" */
+
+    #selector
+    {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    #selector li
+    {
+        width: 150px;
+        text-align: center;
+        list-style-type: none;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        background-color: rgb(229, 229, 229);
+        margin-bottom: 20px;
+    }
+
+    #selector li:hover
+    {
+        background-color: rgb(46, 163, 190);
+    }
+    
+    #selector li:hover a
+    {
+        background-color: rgb(46, 163, 190);
+        color: white;
+    }
+
+    #selector a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #selectorProject
+    {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #selectorLogos
+    {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    #nosProjets
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #nosProjetsImage
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #nosProjetsImage article img
+    {
+        width: 300px;
+    }
+
+    figcaption
+    {
+        position: relative;
+        bottom: 57;
+        width: 300px;
+        height: 57px; /* avec cette hauteur le cadre colle bien à l'image */
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        visibility: hidden;
+    }
+
+    .portfolioHoverFlexbox
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figcaption h3
+    {
+        font-size: 1.1em;
+        position: relative;
+        bottom: 15px;
+        padding-left: 10px;
+    }
+
+    .portfolioIcon
+    {
+        font-size: 120%;
+        color: white;
+        position: relative;
+        bottom: 9px;
+        right: 6px;
+        z-index: 2;
+    }
+
+    #phototest
+    {
+        width: 300px;
+    }
+
+    .iconCircle
+    {
+        background: rgb(46, 163, 190);
+        border: 2px solid white;
+        border-radius:50%;
+        width:28px;
+        height:28px;
+        position: relative;
+        bottom: 34px;
+        right: 11px;
+    }
+
+    figcaption p
+    {
+        width: 85%;
+        font-size: 0.8em;
+        line-height: normal;
+        position: relative;
+        bottom: 45px;
+        margin-left: 10px;
+    }
+
+    #nosProjetsImage article img:hover + figcaption
+    {
+        visibility: visible;
+    }
+
+    /* *** CONTACT *** */
+    iframe
+    {
+        width: 100%; /* largeur de la map */
+        height: 100%;
+        margin-top: -550px; /* Taille du formulaire de contact. Le margin-top negatif permet de coller la map au portfolio */
+    }
+
+    #formContact
+    {
+        width: 350px;
+        background-color: rgba(205, 218, 224, 0.8); /* J'utilise rgba ici plutot qu'opacity pour eviter que le texte ne devienne transparent. En utilisant rgba, seul le fond devient transparent */
+        position: relative;
+        left: 60%;
+        top: 110px;
+        padding-top: 15px; 
+    }
+
+    form
+    {
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 50px;
+    }
+
+    form h2
+    {
+        opacity: 1;
+    }
+
+    form p
+    {
+        margin-top: -15px; /* Espace entre les lignes */
+    }
+
+    #tel
+    {
+        margin-bottom: 30px;
+    }
+
+    #caseContact
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caseText
+    {
+        width: 250px;
+        height: 30px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .caseTextarea
+    {
+        width: 250px;
+        height: 150px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .caseText::placeholder, .caseTextarea::placeholder
+    {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1em;
+    }
+    
+    #contact h1, #contact .bluePoint
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+    body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+    
+/* *** HEADER *** */
+    header
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        z-index: 3;
+    }
+
+    #headerFlexBox
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #navBar ul
+    {
+        display: flex;
+    }
+
+    #navBar li
+    {
+        list-style-type: none;
+        font-size: 1.2em;
+        padding-right: 40px;
+    }
+
+    #navBar a
+    {
+        text-decoration: none;
+        color: black;
+        padding-top: 32px;
+    }
+    
+    /* *** SLIDESHOW *** */
+    .image_1
+    {
+        display: none;
+    }
+    
+    #photo2
+    {
+        display: none;
+    }
+    
+    #computerSlideshow
+    {
+        margin-top: 95px;
+        position: relative;
+        height: 620px;
+        background-image: linear-gradient(to top, rgb(46, 163, 190), white);
+    }
+    
+    #childHand
+    {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+    #slideshowText
+    {
+        display: none
+    }
+    
+    #slideshowTextLowResolution
+    {
+        position: relative;
+        top: 50px;
+        text-align: center;
+        font-size: 1.9em;
+        color: white;
+    }
+   
+    #slideshowTextLowResolution h2
+    {
+        font-size: 2.4em;
+        color: rgb(46, 163, 190);
+    }
+    
+    #slideshowTextLowResolution a
+    {
+        text-decoration: none;
+        color: white;
+    }
+
+    #slideshowTextLowResolution #button
+    {
+        margin: auto;
+        width: 130px;
+        font-size: 80%;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: rgb(46, 163, 190);
+    }
+   
+    /* *** SERVICES *** */
+    #nosServices h1
+    {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    /* Point bleu et son trait*/
+
+    /*Pour réaliser le point bleu avec ses deux traits, j'ai superposer trois couches. Le premieres étant un trait noir, tout simplement. La seconde etant un point de la couleur du fond pour faire la coupure entre le trait et le point bleu. Puis enfin, le point bleu qui vient de mettre sur les deux autres couches*/
+
+    /* Le point bleu */
+    .theBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin: auto;
+        margin-top: -25px;
+    }
+
+    /* Le point blanc */
+    .theWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* Le point gris */
+    .theGreyPoint
+    {
+        background: rgb(245, 245, 245);
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* le trait autour du point */
+    .pointLine
+    {
+        border-top: 2px solid black;
+        width: 200px;
+        margin: auto;
+    }
+    
+    .textIntro
+    {
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .nosServicesFlexBoxImage
+    {
+        display: none;
+    }
+    
+    .nosServicesFlexBoxText
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .iconPresentation
+    {
+        display: flex;
+    }
+
+    .iconPresentation i
+    {
+        color: deepskyblue;
+        padding-top: 25px;
+        padding-left: 25px;
+        font-size: 300%;
+    }
+
+    /* contour des icones */
+    .round
+    {
+        background: white;
+        border-radius:50%;
+        width: 100px;
+        height:100px;
+        margin-top: 40px;
+        border: 1px solid grey;
+    }
+
+    /* les point blanc */
+    .iconWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin-left: 83px;
+        margin-top: -38px;
+    }
+
+    /*point blue de l'icone */
+    .iconBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin-left: 89px;
+        margin-top: -25px;
+    }
+
+    .iconText
+    {
+        width: 80%;
+        margin-left: 80px; /* distance entre l'icone et le texte */
+        margin-top: 30px;
+    }
+    
+    /* *** PROJETS *** */
+    #nosProjets
+    {
+        background-color: rgb(245, 245, 245);
+        padding-bottom: 50px;
+    }
+
+    #nosProjets h1
+    {
+        text-align: center;
+        font-size: 3em;
+        padding-top: 50px;
+    }
+    
+    .textIntro
+    {
+        margin-bottom: 50px;
+    }
+
+    /* Les réglages du points bleu sont situées plus haut dans la rubriques "Nos Services" */
+
+    #selector
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #selector li
+    {
+        width: 150px;
+        text-align: center;
+        list-style-type: none;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        background-color: rgb(229, 229, 229);
+        border: 1px solid rgb(46, 163, 190);
+        margin-bottom: 20px;
+        background-color: white;
+    }
+
+    #selector a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #selectorProject
+    {
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    #selectorLogos
+    {
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    #nosProjets
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #nosProjetsImage
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #nosProjetsImage article img
+    {
+        width: 400px;
+    }
+
+    figcaption
+    {
+        position: relative;
+        bottom: 57;
+        width: 400px;
+        height: 57px; /* avec cette hauteur le cadre colle bien à l'image */
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .portfolioHoverFlexbox
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figcaption h3
+    {
+        font-size: 1.1em;
+        position: relative;
+        bottom: 15px;
+        margin-left: 10px;
+    }
+
+    .portfolioIcon
+    {
+        font-size: 120%;
+        color: white;
+        position: relative;
+        bottom: 9px;
+        right: 6px;
+        z-index: 2;
+    }
+
+    #phototest
+    {
+        width: 300px;
+    }
+
+    .iconCircle
+    {
+        background: rgb(46, 163, 190);
+        border: 2px solid white;
+        border-radius:50%;
+        width:28px;
+        height:28px;
+        position: relative;
+        bottom: 34px;
+        right: 11px;
+    }
+
+    figcaption p
+    {
+        width: 85%;
+        font-size: 0.8em;
+        line-height: normal;
+        position: relative;
+        bottom: 45px;
+        margin-left: 10px;
+    }
+    
+    /* *** CONTACT *** */
+    #contact h1
+    {
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    #formContact h2
+    {
+        padding-top: 30px;
+    }
+    
+    #formContact h2, #formContact h3, #formContact p
+    {
+        text-align: center;
+        line-height: 10px;
+    }
+    
+    #tel
+    {
+        margin-bottom: 50px;
+    }
+    
+    #caseContact
+    {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .caseText, .caseTextarea
+    {
+        margin-bottom: 30px;
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid rgb(46, 163, 190);
+    }
+    
+    .caseTextarea
+    {
+        height: 150px;
+    }
+    
+    .caseText::placeholder, .caseTextarea::placeholder
+    {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    iframe
+    {
+        width: 90%; /* largeur de la map */
+        height: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    } 
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) and (max-width: 767px)
+{
+    body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+    
+/* *** HEADER *** */
+    header
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 3;
+    }
+
+    #headerFlexBox
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #headerFlexBox img
+    {
+        width: 35%;
+        margin-left: 32.5%;
+        padding-top: 5px;
+    }
+    
+    #navBar ul
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #navBar li
+    {
+        list-style-type: none;
+        font-size: 1.2em;
+        padding-right: 40px;
+        margin-bottom: -10px;
+    }
+
+    #navBar a
+    {
+        text-decoration: none;
+        color: black;
+        padding-top: 32px;
+    }
+    
+    /* *** SLIDESHOW *** */
+    .image_1
+    {
+        display: none;
+    }
+    
+    #photo2
+    {
+        display: none;
+    }
+    
+    #computerSlideshow
+    {
+        margin-top: 95px;
+        position: relative;
+        height: 500px;
+        background-image: linear-gradient(to top, rgb(46, 163, 190), white);
+    }
+    
+    #childHand
+    {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+    #slideshowText
+    {
+        display: none
+    }
+    
+    #slideshowTextLowResolution
+    {
+        position: relative;
+        top: 50px;
+        text-align: center;
+        font-size: 1.5em;
+        color: white;
+    }
+   
+    #slideshowTextLowResolution h2
+    {
+        font-size: 2.4em;
+        color: rgb(46, 163, 190);
+    }
+    
+    #slideshowTextLowResolution a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #slideshowTextLowResolution p
+    {
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    #slideshowTextLowResolution #button
+    {
+        margin: auto;
+        width: 130px;
+        font-size: 80%;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: rgb(46, 163, 190);
+    }
+   
+    /* *** SERVICES *** */
+    #nosServices h1
+    {
+        text-align: center;
+        font-size: 3em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    /* Point bleu et son trait*/
+
+    /*Pour réaliser le point bleu avec ses deux traits, j'ai superposer trois couches. Le premieres étant un trait noir, tout simplement. La seconde etant un point de la couleur du fond pour faire la coupure entre le trait et le point bleu. Puis enfin, le point bleu qui vient de mettre sur les deux autres couches*/
+
+    /* Le point bleu */
+    .theBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin: auto;
+        margin-top: -25px;
+    }
+
+    /* Le point blanc */
+    .theWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* Le point gris */
+    .theGreyPoint
+    {
+        background: rgb(245, 245, 245);
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* le trait autour du point */
+    .pointLine
+    {
+        border-top: 2px solid black;
+        width: 200px;
+        margin: auto;
+    }
+    
+    .textIntro
+    {
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .nosServicesFlexBoxImage
+    {
+        display: none;
+    }
+    
+    .nosServicesFlexBoxText
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .iconPresentation
+    {
+        display: flex;
+    }
+
+    .iconPresentation i
+    {
+        color: deepskyblue;
+        padding-top: 25px;
+        padding-left: 25px;
+        font-size: 300%;
+    }
+
+    /* contour des icones */
+    .round
+    {
+        background: white;
+        border-radius:50%;
+        width: 100px;
+        height:100px;
+        margin-top: 40px;
+        border: 1px solid grey;
+    }
+
+    /* les point blanc */
+    .iconWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin-left: 83px;
+        margin-top: -38px;
+    }
+
+    /*point blue de l'icone */
+    .iconBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin-left: 89px;
+        margin-top: -25px;
+    }
+
+    .iconText
+    {
+        width: 80%;
+        margin-left: 80px; /* distance entre l'icone et le texte */
+        margin-top: 30px;
+    }
+    
+    /* *** PROJETS *** */
+    #nosProjets
+    {
+        background-color: rgb(245, 245, 245);
+        padding-bottom: 50px;
+    }
+
+    #nosProjets h1
+    {
+        text-align: center;
+        font-size: 3em;
+        padding-top: 50px;
+    }
+    
+    .textIntro
+    {
+        margin-bottom: 30px;
+    }
+
+    /* Les réglages du points bleu sont situées plus haut dans la rubriques "Nos Services" */
+
+    #selector
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    #selector li
+    {
+        width: 90%;
+        text-align: center;
+        list-style-type: none;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        background-color: white;
+        border: 1px solid rgb(46, 163, 190);
+        margin: auto;
+    }
+    
+    #selectorProject
+    {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #selectorLogos
+    {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    #selector a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #nosProjets
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #nosProjetsImage
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #nosProjetsImage article img
+    {
+        width: 400px;
+    }
+
+    figcaption
+    {
+        position: relative;
+        bottom: 57;
+        width: 400px;
+        height: 57px; /* avec cette hauteur le cadre colle bien à l'image */
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .portfolioHoverFlexbox
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figcaption h3
+    {
+        font-size: 1.1em;
+        position: relative;
+        bottom: 15px;
+        margin-left: 10px;
+    }
+
+    .portfolioIcon
+    {
+        font-size: 120%;
+        color: white;
+        position: relative;
+        bottom: 9px;
+        right: 6px;
+        z-index: 2;
+    }
+
+    #phototest
+    {
+        width: 300px;
+    }
+
+    .iconCircle
+    {
+        background: rgb(46, 163, 190);
+        border: 2px solid white;
+        border-radius:50%;
+        width:28px;
+        height:28px;
+        position: relative;
+        bottom: 34px;
+        right: 11px;
+    }
+
+    figcaption p
+    {
+        width: 85%;
+        font-size: 0.8em;
+        line-height: normal;
+        position: relative;
+        bottom: 45px;
+        margin-left: 10px;
+    }
+    
+    /* *** CONTACT *** */
+    #contact h1
+    {
+        text-align: center;
+        font-size: 3em;
+    }
+    
+    #formContact h2
+    {
+        padding-top: 30px;
+    }
+    
+    #formContact h2, #formContact h3, #formContact p
+    {
+        text-align: center;
+        line-height: 10px;
+    }
+    
+    #tel
+    {
+        margin-bottom: 50px;
+    }
+    
+    #caseContact
+    {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .caseText, .caseTextarea
+    {
+        margin-bottom: 30px;
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid rgb(46, 163, 190);
+    }
+    
+    .caseTextarea
+    {
+        height: 150px;
+    }
+    
+    .caseText::placeholder, .caseTextarea::placeholder
+    {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    iframe
+    {
+        width: 90%; /* largeur de la map */
+        height: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    } 
+}  
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 479px)
+{
+    body
+{
+    font-family: 'Open Sans', sans-serif;
+}
+    
+/* *** HEADER *** */
+    header
+    {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 3;
+    }
+
+    #headerFlexBox
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #headerFlexBox img
+    {
+        width: 60%;
+        margin-left: 20%;
+        padding-top: 5px;
+    }
+    
+    #navBar ul
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #navBar li
+    {
+        list-style-type: none;
+        font-size: 1em;
+        padding-right: 20px;
+    }
+
+    #navBar a
+    {
+        text-decoration: none;
+        color: black;
+        padding-top: 32px;
+    }
+    
+    /* *** SLIDESHOW *** */
+    .image_1
+    {
+        display: none;
+    }
+    
+    #photo2
+    {
+        display: none;
+    }
+    
+    #computerSlideshow
+    {
+        margin-top: 95px;
+        position: relative;
+        height: 420px;
+        background-image: linear-gradient(to top, rgb(46, 163, 190), white);
+    }
+    
+    #childHand
+    {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        
+    }
+    
+    #slideshowText
+    {
+        display: none
+    }
+    
+    #slideshowTextLowResolution
+    {
+        position: relative;
+        top: 50px;
+        text-align: center;
+        font-size: 1.2em;
+        color: white;
+    }
+   
+    #slideshowTextLowResolution h2
+    {
+        font-size: 2.4em;
+        color: rgb(46, 163, 190);
+    }
+    
+    #slideshowTextLowResolution a
+    {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #slideshowTextLowResolution p
+    {
+        text-decoration: none;
+        color: white;
+        width: 90%;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
+    #slideshowTextLowResolution #button
+    {
+        margin: auto;
+        width: 130px;
+        font-size: 80%;
+        padding: 15px 20px;
+        border-radius: 5px;
+        background-color: rgb(46, 163, 190);
+    }
+   
+    /* *** SERVICES *** */
+    #nosServices h1
+    {
+        text-align: center;
+        font-size: 2.4em;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    /* Point bleu et son trait*/
+
+    /*Pour réaliser le point bleu avec ses deux traits, j'ai superposer trois couches. Le premieres étant un trait noir, tout simplement. La seconde etant un point de la couleur du fond pour faire la coupure entre le trait et le point bleu. Puis enfin, le point bleu qui vient de mettre sur les deux autres couches*/
+
+    /* Le point bleu */
+    .theBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin: auto;
+        margin-top: -25px;
+    }
+
+    /* Le point blanc */
+    .theWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* Le point gris */
+    .theGreyPoint
+    {
+        background: rgb(245, 245, 245);
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin: auto;
+        margin-top: -15px;
+    }
+
+    /* le trait autour du point */
+    .pointLine
+    {
+        border-top: 2px solid black;
+        width: 200px;
+        margin: auto;
+    }
+    
+    .textIntro
+    {
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .nosServicesFlexBoxImage
+    {
+        display: none;
+    }
+    
+    .nosServicesFlexBoxText
+    {
+        width: 80%;
+        margin: auto;
+    }
+
+    .iconPresentation
+    {
+        display: flex;
+    }
+
+    .iconPresentation i
+    {
+        color: deepskyblue;
+        padding-top: 25px;
+        padding-left: 25px;
+        font-size: 300%;
+    }
+
+    /* contour des icones */
+    .round
+    {
+        background: white;
+        border-radius:50%;
+        width: 100px;
+        height:100px;
+        margin-top: 40px;
+        margin-left: -15px;
+        border: 1px solid grey;
+        
+    }
+
+    /* les point blanc */
+    .iconWhitePoint
+    {
+        background: white;
+        border-radius:50%;
+        width:30px;
+        height:30px;
+        margin-left: 83px;
+        margin-top: -38px;
+    }
+
+    /*point blue de l'icone */
+    .iconBluePoint
+    {
+        background: deepskyblue;
+        border-radius:50%;
+        width:20px;
+        height:20px;
+        margin-left: 89px;
+        margin-top: -25px;
+    }
+
+    .iconText
+    {
+        width: 100%;
+        margin-left: 40px; /* distance entre l'icone et le texte */
+        margin-top: 30px;
+    }
+    
+    /* *** PROJETS *** */
+    #nosProjets
+    {
+        background-color: rgb(245, 245, 245);
+        padding-bottom: 50px;
+    }
+
+    #nosProjets h1
+    {
+        text-align: center;
+        font-size: 2.4em;
+        padding-top: 50px;
+    }
+    
+    .textIntro
+    {
+        margin-bottom: 30px;
+    }
+
+    /* Les réglages du points bleu sont situées plus haut dans la rubriques "Nos Services" */
+
+    #selector
+    {
+        margin-bottom: 50px;
+    }
+
+    #selector li
+    {
+        width: 80%;
+        text-align: center;
+        list-style-type: none;
+        font-size: 1.1em;
+        padding: 10px 15px;
+        background-color: white;
+        border: 1px solid rgb(46, 163, 190);
+        
+    }
+    
+    #selectorProject
+    {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #selectorLogos
+    {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    
+    #selector a
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #nosProjets
+    {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #nosProjetsImage
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #nosProjetsImage article img
+    {
+        width: 300px;
+    }
+
+    figcaption
+    {
+        position: relative;
+        bottom: 57;
+        width: 300px;
+        height: 57px; /* avec cette hauteur le cadre colle bien à l'image */
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    .portfolioHoverFlexbox
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    figcaption h3
+    {
+        font-size: 1.1em;
+        position: relative;
+        bottom: 15px;
+        margin-left: 10px;
+    }
+
+    .portfolioIcon
+    {
+        font-size: 120%;
+        color: white;
+        position: relative;
+        bottom: 9px;
+        right: 6px;
+        z-index: 2;
+    }
+
+    #phototest
+    {
+        width: 300px;
+    }
+
+    .iconCircle
+    {
+        background: rgb(46, 163, 190);
+        border: 2px solid white;
+        border-radius:50%;
+        width:28px;
+        height:28px;
+        position: relative;
+        bottom: 34px;
+        right: 11px;
+    }
+
+    figcaption p
+    {
+        width: 85%;
+        font-size: 0.8em;
+        line-height: normal;
+        position: relative;
+        bottom: 45px;
+        margin-left: 10px;
+    }
+    
+    /* *** CONTACT *** */
+    #contact h1
+    {
+        text-align: center;
+        font-size: 2.4em;
+    }
+    
+    #formContact h2
+    {
+        padding-top: 30px;
+    }
+    
+    #formContact h2, #formContact h3, #formContact p
+    {
+        text-align: center;
+        line-height: 10px;
+    }
+    
+    #tel
+    {
+        margin-bottom: 50px;
+    }
+    
+    #caseContact
+    {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .caseText, .caseTextarea
+    {
+        margin-bottom: 30px;
+        height: 50px;
+        border-radius: 5px;
+        border: 2px solid rgb(46, 163, 190);
+    }
+    
+    .caseTextarea
+    {
+        height: 150px;
+    }
+    
+    .caseText::placeholder, .caseTextarea::placeholder
+    {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    iframe
+    {
+        width: 90%; /* largeur de la map */
+        height: 90%;
+        margin-left: 5%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    } 
+}  
